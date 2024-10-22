@@ -1,21 +1,17 @@
-const express = require('express');
+const express = require("express");
 
-let app = express();
+const app = express();
+
+const PORT = 3000;
 
 app.get("/", (req, res) => {
-    res.send("Hello World");
+    res.send("Hello, world!");
 });
 
-app.listen(3000, function () {
-    console.log('Slušam');
-});
-
-const port = 3000;
-app.listen(port, (error) => {
+app.listen(PORT, (error) => {
     if (error) {
-        console.error("Greška");
+        console.error(`Greška prilikom pokretanja poslužitelja: ${error.message}`);
     } else {
-        console.log("Slušam na portu");
+        console.log(`Server je pokrenut na http://localhost:${PORT}`);
     }
-})
-
+});
