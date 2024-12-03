@@ -1,17 +1,14 @@
 {
-  "name": "wa24-25",
+  "name": "wa4",
   "version": "1.0.0",
-  "type": "module",
-  "description": "Repozitorij za kolegij Web aplikacije",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "keywords": [],
   "dependencies": {
-    "express": "^4.21.1",
-    "nodemon": "^3.1.7"
+    "express": "^4.21.1"
   }
 }
