@@ -3,8 +3,8 @@ import { config } from 'dotenv';
 
 config(); // učitava osjetljive podatke iz .env datoteke
 
-const mongoURI = process.env.MONGO_URI
-const db_name = process.env.MONGO_DB; // naziv predefinirane baze podataka
+let mongoURI = process.env.MONGO_URI
+let db_name = process.env.MONGO_DB; // naziv predefinirane baze podataka
 
 async function connectToDatabase() {
     try {
